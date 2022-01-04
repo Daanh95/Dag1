@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /*Tag selector*/
+        img{
+            border: 20px dashed blue;
+        }
+
+        /* Geef alle tables een background color en een width*/
+        table{
+            background-color: pink;
+            width: 50%;
+            border: 3px solid black;
+        }
+
+        /*Class selector*/
+        .demo {
+            text-decoration: line-through;
+            color: greenyellow;
+        }
+
+        /*Maak een class aan met with - height 2 elementen*/
+        .demo2 {
+            width: 20px;
+            height: 30px;
+        }
+
+        #table11 {
+            background-color: indigo;
+            font-size: 32px;
+        }
+
+        /*Maak een nieuwe id aan en stijl die met een background color en text decoration*/
+        #table12{
+            background-color: blue;
+            text-decoration: line-through;
+        }
+
+        /*events*/
+        span:hover{
+            color:gray;
+        }
+
+        tr:nth-child(odd){
+            background-color: greenyellow;
+        }
+
+        tr:nth-child(even){
+            background-color: black;
+            color:white;   
+        }
+
+        a:visited{
+            color: red;
+            font-size: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 class = "demo demo2" style="color:red; font-size: 150%;">Mijn eerste pagina</h1>
+
+
+    <button onclick="doeIets()" * onmouseover="doeIets()">Klik mij!</button>
+    <!-- maak 2 invoer velden
+        lees waarden uit dmv button
+        print dmv alert vermenigvuldiging uit-->
+
+
+    <!-- Verander background-color   text-decoration -->
+    <p style="background-color:blue; text-decoration:line-through;">Dit is een paragraaf</p>
+
+    <p>Dit is ook een paragraaf</p>
+
+    <span> Dit is mijn eerste span</span> <span class =" demo demo2">Dit is mijn tweede span</span>
+
+    <br>
+    <br>
+    <br>
+
+    <img
+        src="https://www.shorturl.at/img/shorturl-icon.png">
+
+    <table id="table11">
+        <tr>
+            <td>Cell1</td>
+            <td>Cell2</td>
+        </tr>
+
+        <tr>
+            <td>Cell3</td>
+            <td>Cell4</td>
+        </tr>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Kolom 1</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Cell1</td>
+            </tr>
+            <tr>
+                <td>Cell1</td>
+            </tr>
+            <tr>
+                <td>Cell1</td>
+            </tr>
+            <tr>
+                <td>Cell1</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Cell1</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <div>
+        <div>Block 1</div>
+        <div id="div2">Block 2</div>
+    </div>
+
+    <a href="http://www.nu.nl" target="_blank"> klik hier</a>
+
+    <input type ="text" id="input" value='1'>
+
+    <script>
+        var mijneerstevar1 = 20;
+        mijneerstevar1 = 10;
+
+        const demo = 50;
+        //demo = 60;
+
+        //console.log("De variabel is: " + mijneerstevar1);
+        //alert("de var is" + mijneerstevar1);
+
+        mijneerstefunction();
+
+        function mijneerstefunction(){
+            //alert("Ik zit in de function");
+        }
+
+        document.getElementById('div2').innerText = 'Mijn eerste variable = ' + mijneerstevar1;
+        
+        var defaultVar = document.getElementById('input').value;
+
+        function inputAlert(){
+            alert(defaultVar)
+        }
+
+        inputAlert();
+
+        function doeIets(){
+            alert('in click met een function');
+        }
+
+        //Maak een invoerveld met een waarde erin
+        //Daarna een function om de waarde te printe dmv alert
+        //Roep die functie aan
+
+    </script>
+
+</body>
+
+</html>
+

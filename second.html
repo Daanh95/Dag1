@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    
+</head>
+<body>
+    <input type ="text" id="input1" value='2'>
+    <input type ="text" id="input2" value='5'>
+    <button onclick="Multiply()"  onmouseover="Multiply()">Klik Multiply!</button>
+    <button onclick="Delen()"  onmouseover="Delen()">Klik Delen!</button>
+    <button onclick="Aftrek()"  onmouseover="Aftrek()">Klik Aftrek!</button>
+    <button onclick="Optel()"  onmouseover="Optel()">Klik Optel!</button>
+
+    <div id = "naam">
+        
+    </div>
+</body>
+
+<script>
+    function Multiply(){
+        var input1 = parseInt(document.getElementById('input1').value);
+        var input2 = parseInt(document.getElementById('input2').value);
+        var multiply = input1 * input2;
+        document.getElementById('naam').innerText = multiply;      
+    }
+
+    function Delen(){
+        var input1 = parseInt(document.getElementById('input1').value);
+        var input2 = parseInt(document.getElementById('input2').value);
+        var delen= input1 / input2;
+        document.getElementById('naam').innerText = delen;   
+    }
+
+    function Aftrek(){
+        var input1 = parseInt(document.getElementById('input1').value);
+        var input2 = parseInt(document.getElementById('input2').value);
+        var aftrek = input1 +- input2;
+        document.getElementById('naam').innerText = aftrek;   
+    }
+    function Optel(){
+        var input1 = parseInt(document.getElementById('input1').value);
+        var input2 = parseInt(document.getElementById('input2').value);
+        var optel = input1 + input2;
+        document.getElementById('naam').innerText = optel;   
+        
+    }
+
+    //Delen optellen aftrekken menigvuldigen en plaats het resultaat in een nieuwe div -> innertext
+</script>
+
+</html>
+
